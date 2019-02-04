@@ -1,0 +1,42 @@
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    select {
+        width: 200px;
+    }
+
+    input{
+        width: 200px;
+        &:focus + ul.dropdown {
+            display: block;
+        }
+    }
+
+    .dropdown-container {
+        position: relative;
+    }
+
+    ul.dropdown {
+        list-style: none;
+        padding-left: 0px;
+        margin: 0;
+        width: 200px;
+        position: absolute;
+        display: none;
+
+        li{
+            border: 1px solid lightgreen;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: lightgreen;
+                color: #F7F7F7;
+            }
+        }
+    }
+
+}
+
